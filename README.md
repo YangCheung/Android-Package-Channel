@@ -1,23 +1,21 @@
-#打包方法
+# 打包方法
 
 因为Android在安装apk时，不对META-INF文件夹的文件经行签名校验，
 
 所以可以在这个文件夹随添加/修改相关文件作为渠道标识
 
 
+	python ./package.py xxxxx.apk dev
 
-`
- python ./package.py xxxxx.apk dev
-`
 
 
 最后一个参数是想要的渠道名称
 
 
-#读取渠道包
+# 读取渠道包
 
 
-`
+
 
 
 	public static String getCustomChannelInfo(Context context){
@@ -100,4 +98,3 @@
         return mChannel;
 
     }
-`
